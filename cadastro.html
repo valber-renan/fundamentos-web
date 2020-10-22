@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça parte!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -14,38 +15,60 @@
             <a href="cadastro.html">Cadastro</a>
         </li>
     </ul>
-    <h1>Cadastro</h1>
-    <form >
-        <label for="nome">Nome:</label><br>
-        <input type="text"id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label><br>
-        <input type="email"id="email">
-        <br>
-        <br>
-        <label for="idade">Idade:</label><br>
-        <input type="number"id="idade">
-        <br>
-        <br>
-        <label for="proprietario">Já tem seu Opalão?:</label><br>
-        <input type="radio"id="proprietario">
-        <br>
-        <br>
-        <label for="experiencia">Conte sua experiência com a maquina:</label><br>
-        <textarea name="experiencia" id="experiencia" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Cadastrar</button>
-    </form>
-    <h2>Endereço do encontro de opalas passado</h2>
-    <p>Av. Olavo Fontoura, 1209</p>
-    <p>São paulo - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4514882547355!2d-46.
-    64541418538497!3d-23.5162584658125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-    1!3m3!1m2!1s0x94ce5877a8161bd7%3A0x7c0ca5f0356f3c80!2sSamb%C3%B3dromo%20do%20Anhembi!
-    5e0!3m2!1spt-BR!2sbr!4v1603298612344!5m2!1spt-BR!2sbr" width="450" height="300" frameborder="0"
-     style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <h1 class="center">Cadastro</h1>
+    <div class="container mb-50">
+        <div>
+            <form >
+                <label for="nome">Nome:</label><br>
+                <input type="text"id="nome">
+                <br>
+                <br>
+                <label for="email">E-mail:</label><br>
+                <input type="email"id="email">
+                <br>
+                <br>
+                Data de Nascimento:<br><input type="date"name ="tNasc" id="cNasc">
+                <br>
+                <br>
+                <fieldset id="opala"><legend>Já tem seu Opalão?:</legend>
+                <input type="radio" name ="topala" id="proprietario" checked><label for="proprietario">sim</label>
+                <input type="radio" name ="topala" id="negativo"><label for="negativo">não</label>
+                </fieldset>
+                <br>
+                <br>
+                <label for="experiencia">Conte sua experiência com a maquina:</label><br>
+                <textarea name="experiencia" id="experiencia" cols="35" rows="5"></textarea>
+                <br>
+                <br>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+        <div class="ml-50">
+            <p class="center">Av. Olavo Fontoura, 1209</p>
+            <p class="center">São paulo - SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4514882547355!2d-46.
+            64541418538497!3d-23.5162584658125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x94ce5877a8161bd7%3A0x7c0ca5f0356f3c80!2sSamb%C3%B3dromo%20do%20Anhembi!
+            5e0!3m2!1spt-BR!2sbr!4v1603298612344!5m2!1spt-BR!2sbr" width="450" height="300" frameborder="0"
+             style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </div>
+    <hr>
+    <footer>
+         <div class="container">
+              <a href="https://pt-br.facebook.com/" target="_blank"> <img class ="tm-social p-30" src="assets/img/facebook.png" alt="Logo do Facebook"></a>
+             
+              <a href="https://www.instagram.com/?hl=pt-br" target="_blank"> <img class ="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
+             
+              <a href="https://br.linkedin.com/" target="_blank">  <img class ="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
+             
+            
+         </div>
+         <p class="center">
+              Todos os direitos reservados: Valber Renan &copy;
+         </p>
+    </footer>
     
 </body>
 </html>
