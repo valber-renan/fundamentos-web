@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Carros</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
 
-    <ul id="menu"> 
-        <li>
-             <a href="index.html">Home</a>
-        </li>
-        <li>
-             <a href="cadastro.html">Cadastro</a>
-        </li>
-    </ul>
+    
+     <ul id="menu"> 
+          <li onmouseover="mudaFoto('assets/img/chevlog.jpg')"onmouseout="mudaFoto('assets/img/opalalogo.png')">
+               <a href="index.html">Home</a>
+          </li>
+          <li onmouseover="mudaFoto2('assets/img/garagem.png')"onmouseout="mudaFoto2('assets/img/opalalogo2.png')">
+               <a href="cadastro.html">Cadastro</a>
+          </li>
+      </ul>
 
+      <div class ="container-menu">
+          <img id = "icone4" src="assets/img/opalalogo4.png" alt="Logo do Site: Um Icone de carro!">
+          <img id = "icone" src="assets/img/opalalogo.png" alt="Logo do Site: Um Icone de carro!">
+          <img id = "icone2" src="assets/img/opalalogo2.png" alt="Logo do Site: Um Icone de carro!">
+          <img id = "icone3" src="assets/img/opalalogo3.png" alt="Logo do Site: Um Icone de carro!">
+          <img id = "icone5" src="assets/img/opalalogo5.png" alt="Logo do Site: Um Icone de carro!">
+
+     </div>
     <h1 class="center">O carro que eu gostaria de ter!</h1>
+   
     <div class="container">
      <div>
           <img class="p-30" src="assets/img/opala laranja.jpg" alt="Opala SS vermelho!">
@@ -54,5 +65,6 @@
                Todos os direitos reservados: Valber Renan &copy;
           </p>
      </footer>
+     <script src="assets/js/script.js"></script>
 </body>
 </html>

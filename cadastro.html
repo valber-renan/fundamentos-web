@@ -7,24 +7,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul id="menu">
-        <li>
-            <a href="index.html">Home</a>
+    <ul id="menu"> 
+        <li onmouseover="mudaFoto('assets/img/chevlog.jpg')"onmouseout="mudaFoto('assets/img/opalalogo.png')">
+             <a href="index.html">Home</a>
         </li>
-        <li>
-            <a href="cadastro.html">Cadastro</a>
+        <li onmouseover="mudaFoto2('assets/img/garagem.png')"onmouseout="mudaFoto2('assets/img/opalalogo2.png')">
+             <a href="cadastro.html">Cadastro</a>
         </li>
     </ul>
+
+    <div class ="container-menu">
+        <img id = "icone4" src="assets/img/opalalogo4.png" alt="Logo do Site: Um Icone de carro!">
+        <img id = "icone" src="assets/img/opalalogo.png" alt="Logo do Site: Um Icone de carro!">
+        <img id = "icone2" src="assets/img/opalalogo2.png" alt="Logo do Site: Um Icone de carro!">
+        <img id = "icone3" src="assets/img/opalalogo3.png" alt="Logo do Site: Um Icone de carro!">
+        <img id = "icone5" src="assets/img/opalalogo5.png" alt="Logo do Site: Um Icone de carro!">
+
+   </div>
     <h1 class="center">Cadastro</h1>
     <div class="container mb-50">
         <div>
             <form >
                 <label for="nome">Nome:</label><br>
-                <input type="text"id="nome">
+                <input type="text"id="nome" onkeyup='validaNome()'>
+                <div id="txtNome"></div>
                 <br>
                 <br>
                 <label for="email">E-mail:</label><br>
-                <input type="email"id="email">
+                <input type="email"id="email" onkeyup='validaEmail()'>
+                <div id="txtEmail"></div>
                 <br>
                 <br>
                 Data de Nascimento:<br><input type="date"name ="tNasc" id="cNasc">
@@ -37,10 +48,11 @@
                 <br>
                 <br>
                 <label for="experiencia">Conte sua experiência com a maquina:</label><br>
-                <textarea name="experiencia" id="experiencia" cols="35" rows="5"></textarea>
+                <textarea name="experiencia" id="experiencia" cols="35" rows="5" onkeyup="validaExperiencia()"></textarea>
+                <div id="txtExperiencia"></div>
                 <br>
                 <br>
-                <button>Cadastrar</button>
+                <button onclick="cadastrar()">Cadastrar</button>
             </form>
         </div>
         <div class="ml-50">
@@ -50,7 +62,7 @@
             64541418538497!3d-23.5162584658125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
             1!3m3!1m2!1s0x94ce5877a8161bd7%3A0x7c0ca5f0356f3c80!2sSamb%C3%B3dromo%20do%20Anhembi!
             5e0!3m2!1spt-BR!2sbr!4v1603298612344!5m2!1spt-BR!2sbr" width="450" height="300" frameborder="0"
-             style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
         </div>
 
     </div>
@@ -69,6 +81,6 @@
               Todos os direitos reservados: Valber Renan &copy;
          </p>
     </footer>
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

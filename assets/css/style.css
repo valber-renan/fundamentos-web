@@ -9,6 +9,10 @@ h1{
 h2{
     color: #1B1464;
 }
+.container-menu{
+    display: flex;
+    justify-content:center;
+}
 .container{
     display: flex;
     flex-flow: row;
